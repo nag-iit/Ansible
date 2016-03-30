@@ -1,0 +1,27 @@
+---
+jenkins_connection_delay: 5
+jenkins_connection_retries: 60
+jenkins_hostname: localhost
+jenkins_http_port: 8080
+jenkins_jar_location: /opt/jenkins-cli.jar
+jenkins_plugins:
+  - git
+  - ssh
+  - build-pipeline-plugin
+  - email-ext
+  - sonar
+  - join
+  - dropdown-viewstabbar-plugin
+  - deploy
+  - cucumber-testresult-plugin
+  - cucumber-reports
+  - view-job-filters
+  - build-metrics
+  - disk-usage
+  - seleniumhtmlreport
+  - build-history-metrics-plugin
+  - configurationslicing
+  - escaped-markup-plugin
+  - backup
+  - thinBackup
+jenkins_url_prefix: ""
