@@ -7,8 +7,14 @@ jenkins_jar_location: /opt/jenkins-cli.jar
 jenkins_plugins:
   - git
   - ssh
+  - cloudbees-folder
   - build-pipeline-plugin
   - email-ext
+  - bitbucket
+  - bitbucket-pullrequest-builder
+  - copyartifact 
+  - credentials
+  - greenballs
   - sonar
   - join
   - dropdown-viewstabbar-plugin
@@ -24,4 +30,40 @@ jenkins_plugins:
   - escaped-markup-plugin
   - backup
   - thinBackup
+  - audit-trail
+  - jenkins-cloudformation-plugin
+  - slack
+  - extensible-choice-parameter
+  - git-parameter
+  - global-variable-string-parameter
+  - nodelabelparameter
+  - phing
+  - checkstyle
+  - analysis-collector     
+  - plot
+  - analysis-core
+  - pmd 
+  - build-name-setter
+  - test-results-analyzer
+  - artifactory
+  - ec2-deployment-dashboard
+  - delivery-pipeline-plugin
+  - timestamper
+  - mask-passwords
+  - ws-cleanup
+  - publish-over-ssh
+  - ssh-agent
+  - ssh2easy
+  - terminate-ssh-processes-plugin
+  - jenkins-multijob-plugin 
+  - groovy
+  - job-dsl
+  - fail-the-build-plugin
+  - fstrigger
+  - conditional-buildstep 
+  - docker-build-step
+  - docker-build-publish
+  - s3
+  - jobConfigHistory
+  - scm-sync-configuration
 jenkins_url_prefix: ""
