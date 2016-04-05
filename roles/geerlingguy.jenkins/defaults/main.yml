@@ -15,16 +15,12 @@ jenkins_plugins:
   - copyartifact 
   - credentials
   - greenballs
-  - sonar
   - join
   - dropdown-viewstabbar-plugin
   - deploy
-  - cucumber-testresult-plugin
-  - cucumber-reports
   - view-job-filters
   - build-metrics
   - disk-usage
-  - seleniumhtmlreport
   - build-history-metrics-plugin
   - configurationslicing
   - escaped-markup-plugin
@@ -37,7 +33,6 @@ jenkins_plugins:
   - git-parameter
   - global-variable-string-parameter
   - nodelabelparameter
-  - phing
   - checkstyle
   - analysis-collector     
   - plot
@@ -47,6 +42,7 @@ jenkins_plugins:
   - test-results-analyzer
   - artifactory
   - ec2-deployment-dashboard
+  - ec2
   - delivery-pipeline-plugin
   - timestamper
   - mask-passwords
@@ -67,4 +63,5 @@ jenkins_plugins:
   - jobConfigHistory
   - scm-sync-configuration
   - phing
+  - ansible
 jenkins_url_prefix: ""
