@@ -1,7 +1,9 @@
 ---
 - name: Configure CI server
   hosts: localhost
-  sudo: True
+  become: True
   roles:
     - git
     - geerlingguy.jenkins
+    - gitHttpsConfig
+    - aws.configure

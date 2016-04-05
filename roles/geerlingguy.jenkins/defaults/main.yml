@@ -66,4 +66,5 @@ jenkins_plugins:
   - s3
   - jobConfigHistory
   - scm-sync-configuration
+  - phing
 jenkins_url_prefix: ""
