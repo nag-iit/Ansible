@@ -1,6 +1,6 @@
 ---
 - name: Configure CI server
-  hosts: localhost
+  hosts: hosts.jenkins
   become: True
   roles:
     - git
