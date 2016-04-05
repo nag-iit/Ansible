@@ -64,4 +64,5 @@ jenkins_plugins:
   - scm-sync-configuration
   - phing
   - ansible
+  - swarm
 jenkins_url_prefix: ""
