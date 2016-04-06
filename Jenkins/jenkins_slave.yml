@@ -4,5 +4,7 @@
   become: True
   roles:
     - git
+    - user.jenkins
     - gitHttpsConfig
     - aws.configure
+    - swarm.slave

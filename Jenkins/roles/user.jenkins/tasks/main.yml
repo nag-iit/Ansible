@@ -1,0 +1,2 @@
+---
+  - user: name=jenkins comment="Jenkins user for slave machine"
