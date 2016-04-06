@@ -41,7 +41,6 @@ jenkins_plugins:
   - build-name-setter
   - test-results-analyzer
   - artifactory
-  - ec2-deployment-dashboard
   - ec2
   - delivery-pipeline-plugin
   - timestamper
