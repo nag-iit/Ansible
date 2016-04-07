@@ -1,0 +1,3 @@
+#!/bin/bash
+
+java -jar {{ jenkins_home }}/swarm-client-1.10-jar-with-dependencies.jar -master {{jenkins_master_url }}  -name Slave-10 -labels Slave-10 -description SlaveAddedBySwarmAutoDiscovery -username {{ jenkins_master_user }} -password {{ jenkins_master_password }} -mode exclusive  -disableSslVerification -executors 5 -fsroot {{ jenkins_home }}/jenkins-slave &> {{jenkins_home}}/swarm-client.log &

@@ -1,0 +1,4 @@
+jenkins_home: /home/jenkins
+jenkins_master_user: admin
+jenkins_master_password: admin
+jenkins_master_url: https://ec2-52-63-169-195.ap-southeast-2.compute.amazonaws.com/
