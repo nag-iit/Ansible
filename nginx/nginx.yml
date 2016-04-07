@@ -1,8 +1,7 @@
-# ./nginx/nginx.yml
-#
 ---
-  - name: Configure CI server
-    hosts: localhost
-    become: True
-    roles:
-      - nginx
+- name: Install & Configure NGINX server
+  hosts: localhost
+  become: true
+  roles:
+    - selfsignedcerts
+    - nginx

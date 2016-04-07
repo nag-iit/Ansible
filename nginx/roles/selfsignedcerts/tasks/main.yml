@@ -1,0 +1,17 @@
+  - name: Create '{{ ssl_dir }}' directory for certificates
+    become: true
+    file: path='{{ ssl_dir }}' state=directory mode=0755
+
+  - name: Create self signed certificate
+    become: true
+    command: >
+      openssl genrsa -out '{{ server_name }}'.key 2048
+    args:
+     chdir: '{{ ssl_dir }}'
+
+  - name: Create self signed certificate
+    become: true
+    command: >
+      openssl req -new -x509 -key '{{ server_name }}'.key -out '{{ server_name }}'.cert  -days 3650 -subj /CN='{{ server_name }}'
+    args:
+     chdir: '{{ ssl_dir }}'

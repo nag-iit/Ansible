@@ -1,0 +1,4 @@
+ssl_dir: /opt/ssl
+server_name: ec2-52-63-169-195.ap-southeast-2.compute.amazonaws.com
+ssl_key: ec2-52-63-169-195.ap-southeast-2.compute.amazonaws.com.key
+ssl_cert: ec2-52-63-169-195.ap-southeast-2.compute.amazonaws.com.cert

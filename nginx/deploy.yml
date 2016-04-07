@@ -1,6 +1,0 @@
-# ./ansible-nginx/deploy.yml
-#
- - hosts: localhost
-   tasks:
-       - include: 'tasks/selfsignedcerts.yml'
-       - include: 'tasks/install_nginx.yml'
