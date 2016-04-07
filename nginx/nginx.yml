@@ -1,0 +1,5 @@
+# ./nginx/nginx.yml
+#
+ - hosts: localhost
+   tasks:
+       - include: 'tasks/main.yml'

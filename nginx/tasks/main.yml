@@ -1,0 +1,35 @@
+# ./nginx/tasks/main.yml
+#
+- name: NGINX | Installing NGINX
+  become: true
+  yum:
+    name: nginx
+    state: latest
+
+- name: NGINX | Nginx nginx.conf config file
+  become: true
+  tempalte: 
+    src: nginx.conf
+    dest: /etc/nginx/nginx.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+   - reload nginx
+
+- name: NGINX | Nginx jenkins.conf Config file
+  become: true
+  tempalte: 
+    src: jenkins.conf
+    dest: /etc/nginx/conf.d/jenkins.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+   - reload nginx
+
+- name: NGINX | Starting NGINX
+  become: true
+  service:
+    name: nginx
+    state: started
