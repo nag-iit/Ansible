@@ -1,5 +1,8 @@
 # ./nginx/nginx.yml
 #
- - hosts: localhost
-   tasks:
-       - include: 'tasks/main.yml'
+---
+  - name: Configure CI server
+    hosts: localhost
+    become: True
+    roles:
+      - nginx
