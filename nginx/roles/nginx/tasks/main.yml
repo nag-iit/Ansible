@@ -8,8 +8,6 @@
       owner: root
       group: root
       mode: 0644
-    notify:
-      - reload nginx
 
   - name: NGINX | Configuring /etc/nginx/jenkins.conf file
     template: 
@@ -18,8 +16,6 @@
       owner: root
       group: root
       mode: 0644
-    notify:
-     - reload nginx
 
   - name: NGINX  Starting NGINX
     service:

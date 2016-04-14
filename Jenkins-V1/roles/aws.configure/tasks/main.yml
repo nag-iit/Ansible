@@ -1,0 +1,12 @@
+---
+  - name: AWS Configure - set region to us-east-1
+    become_user: jenkins
+    command: aws configure set default.region us-east-1
+    args:
+     chdir: ~jenkins
+
+  - name:  AWS Condifure - set default output  to JSON
+    become_user: jenkins
+    command: aws configure set default.region us-west-1
+    args:
+     chdir: ~jenkins

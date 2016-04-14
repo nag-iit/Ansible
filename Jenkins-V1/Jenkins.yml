@@ -1,0 +1,9 @@
+---
+- name: Configure CI server
+  hosts: [hosts.jenkins]
+  become: True
+  roles:
+    - git
+    - jenkins
+    - gitHttpsConfig
+    - aws.configure

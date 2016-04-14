@@ -1,0 +1,16 @@
+---
+  - name: git config - codecommit credential helper
+    become_user: jenkins
+    command: git config --global credential.helper '!aws codecommit credential-helper $@'
+
+  - name: git config codecommit use HTTPS set to true
+    become_user: jenkins
+    command: git config --global credential.useHttpPath true
+
+  - name: git config set email
+    become_user: jenkins
+    command: git config --global user.email "TfNSWadmin@transport.com"
+
+  - name: git config set name
+    become_user: jenkins
+    command: git config --global user.name "TfNSWJenkinsServer"

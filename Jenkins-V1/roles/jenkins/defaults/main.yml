@@ -1,0 +1,66 @@
+---
+jenkins_connection_delay: 5
+jenkins_connection_retries: 60
+jenkins_hostname: localhost
+jenkins_http_port: 8080
+jenkins_jar_location: /opt/jenkins-cli.jar
+jenkins_plugins:
+  - git
+  - ssh
+  - cloudbees-folder
+  - build-pipeline-plugin
+  - email-ext
+  - bitbucket
+  - bitbucket-pullrequest-builder
+  - copyartifact 
+  - credentials
+  - greenballs
+  - join
+  - dropdown-viewstabbar-plugin
+  - deploy
+  - view-job-filters
+  - build-metrics
+  - disk-usage
+  - build-history-metrics-plugin
+  - configurationslicing
+  - escaped-markup-plugin
+  - thinBackup
+  - audit-trail
+  - jenkins-cloudformation-plugin
+  - slack
+  - extensible-choice-parameter
+  - git-parameter
+  - global-variable-string-parameter
+  - nodelabelparameter
+  - checkstyle
+  - analysis-collector     
+  - plot
+  - analysis-core
+  - pmd 
+  - build-name-setter
+  - test-results-analyzer
+  - artifactory
+  - ec2
+  - delivery-pipeline-plugin
+  - timestamper
+  - mask-passwords
+  - ws-cleanup
+  - publish-over-ssh
+  - ssh-agent
+  - ssh2easy
+  - terminate-ssh-processes-plugin
+  - jenkins-multijob-plugin 
+  - groovy
+  - job-dsl
+  - fail-the-build-plugin
+  - fstrigger
+  - conditional-buildstep 
+  - docker-build-step
+  - docker-build-publish
+  - s3
+  - jobConfigHistory
+  - scm-sync-configuration
+  - phing
+  - ansible
+  - swarm
+jenkins_url_prefix: ""
