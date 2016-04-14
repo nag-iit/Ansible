@@ -24,7 +24,6 @@ jenkins_plugins:
   - build-history-metrics-plugin
   - configurationslicing
   - escaped-markup-plugin
-  - backup
   - thinBackup
   - audit-trail
   - jenkins-cloudformation-plugin

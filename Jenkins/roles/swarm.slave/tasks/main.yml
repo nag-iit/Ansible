@@ -5,6 +5,6 @@
 
   - name: Connect to Jenkins Master via Swarm client
     become_user: jenkins
-    command: java -jar /home/jenkins/swarm-client-1.10-jar-with-dependencies.jar -master http://52.62.71.102:8080/ -name Slave-10 -labels Slave-10 -description SlaveAddedBySwarmAutoDiscovery -username admin -password admin -mode exclusive  -disableSslVerification -executors 5 -fsroot /home/jenkins
+    command: java -jar /home/jenkins/swarm-client-1.10-jar-with-dependencies.jar -master https://ec2-52-63-169-195.ap-southeast-2.compute.amazonaws.com -name Slave-10 -labels Slave-10 -description SlaveAddedBySwarmAutoDiscovery -username adm -password admmad -mode exclusive  -disableSslVerification -executors 5 -fsroot /home/jenkins/jenkins_slave &
     args:
      chdir: ~jenkins
